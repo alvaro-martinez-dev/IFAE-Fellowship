@@ -1,0 +1,161 @@
+#########################################################
+#                                                       #
+#                      SAMPLES                          #
+#                                                       #
+#########################################################
+
+samples:
+################# bkg #################
+ - name: "higgs"
+   label: "higgs"
+   dsids: [345097,345120,346190,346310,346311,346312,346343,346344,346345]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#e41a1c"
+
+ - name: "othertop"
+   label: "other_top"
+   dsids: [304014,410081,410408,504330,504334,504338,504342,504346,545027,545028,701260,701261,701262]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#984ea3"
+
+ - name: "singletop_lep" # leptonic decay
+   label: "singletop_lep"
+   dsids: [410644,410645,410658,410659,601353,601354]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#4daf4a"
+
+ - name: "ttbar_allhad" # allhad
+   label: "$t\\bar{t}$_allhad"
+   dsids: [410471]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#ff7f00"
+
+ - name: "ttbar_dil" # dileptonic
+   label: "$t\\bar{t}$_dil"
+   dsids: [410472]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#377eb8"
+
+
+ - name: "ttbar_nonallhad" 
+   label: "$t\\bar{t}$_nonallhad"
+   dsids: [410470]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#a65628"
+
+ - name: "VV_Sh2214" # Sh2214
+   label: "VV"
+   dsids: [345705,345706,345718,345723,364288,364289,364290,364302,364303,364304,364305,701000,701005,701010,701015,701020,701025,701030,701035,701085,701090,701095,701100,701105,701110,701115,701120,701125]
+   # missing 701040,701045,701050,701060,701065, especially 701050 (Sh_llvv_os)
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#17becf"
+
+ - name: "VVV"
+   label: "VVV"
+   dsids: [701235,701236,701237,701238,701239,701240,701241,701242]
+   # should probably also include 701243-46 (WpWp/mWm_lvlvjj_ss/os)
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#f781bf"
+
+ - name: "Vy" # Sh2214
+   label: "$V\\gamma$"
+   dsids: [700770,700771,700772,700773,700774,700775,700776]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#ffd92f"
+
+ - name: "Wjets" # W->lv
+   label: "$W$+jets"
+   dsids: [700338,700339,700340,700341,700342,700343,700344,700345,700346,700347,700348,700349]
+   # should probably include also 700362-4 (We/mu/taunu2jets_Min_N_TChannel)
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#66c2a5"
+
+ - name: "Zjets" # Z->ll
+   label: "$Z$+jets"
+   dsids: [700320,700321,700322,700323,700324,700325]
+   # missing 700326-34 (Ztautau) or mayby just 700326-8 (Ztautau_LL)
+   # more updated, inclusive Ztt samples (?): 700792-4
+   # should probably include also 700358-60 (Zee/mm/tt2jets_Min_N_TChannel)
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#8da0cb"
+
+ - name: "Zjets_lowMLL"
+   label: "$Z$+jets_lowMLL"
+   dsids: [700467,700468,700469,700470,700471,700472,700901,700902,700903]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fullsim"
+   automatic_systematics: False
+   type: background
+   color: "#a6cee3"
+
+################# data #################
+ - name: "Data201516" # merging 2015+2016 to correspond to mc20a
+   dsids: [0]
+   campaigns: ["2015","2016"]
+   simulation_type: "data"
+   type: data
+   color: "black"
+
+# - name: "Data2016"
+#   dsids: [0]
+#   campaigns: ["2016"]
+#   simulation_type: "data"
+
+ - name: "Data2017"
+   dsids: [0]
+   campaigns: ["2017"]
+   simulation_type: "data"
+   type: data
+   color: "black"
+
+ - name: "Data2018"
+   dsids: [0]
+   campaigns: ["2018"]
+   simulation_type: "data"
+   type: data
+   color: "black"
+
+################# signal #################
+ - name: "C1N2_WZ_2L_150_135" # merging C1pN2+C1mN2 for this mass-point
+   label: "C1N2_WZ_2L_150_135"
+   dsids: [569348,569349]
+   campaigns: ["mc20a","mc20d","mc20e"]
+   simulation_type: "fastsim"
+   automatic_systematics: False
+   type: signal
+   color: "#ff00ff"
+   linestyle: "--"
+

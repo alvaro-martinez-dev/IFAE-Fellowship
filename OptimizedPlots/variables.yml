@@ -1,0 +1,145 @@
+#########################################################
+#                                                       #
+#                    VARIABLES                          #
+#                                                       #
+#########################################################
+
+
+variables:
+    
+  - name: "jet_n_NOSYS"
+    units : null
+    logy: true
+    binning:
+      min: 0
+      max: 7
+      number_of_bins: 10
+
+  - name: "lep1_pt_NOSYS"
+    units : "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 140
+      number_of_bins: 35
+
+  - name: "lep1_eta_NOSYS"
+    units : null
+    logy: true
+    binning:
+      min: -3.0
+      max: 3.0
+      number_of_bins: 30
+
+  - name: "lep2_pt_NOSYS"
+    units : "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 100
+      number_of_bins: 35
+
+  - name: "lep2_eta_NOSYS"
+    units : "None"
+    logy: true
+    binning:
+      min: -3.0
+      max: 3.0
+      number_of_bins: 30
+      logy: true
+        
+  - name: "L2_mll_NOSYS"
+    units : "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 300
+      number_of_bins: 50
+
+  - name: "L2_RJ_R_ISR_NOSYS"
+    units: "None"
+    logy: true
+    binning:
+      min: 0
+      max: 2.5
+      number_of_bins: 20
+
+  - name: "L2_mt2_NOSYS"
+    units: "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 60
+      number_of_bins: 30
+        
+  - name: "L2_mt2100_NOSYS"
+    units: "GeV"
+    logy: true
+    binning:
+      min: 100
+      max: 180
+      number_of_bins: 35
+
+  - name: "met_GeV_NOSYS"
+    units: "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 100
+      number_of_bins: 30
+
+  - name: "L2_dR_ll_NOSYS"
+    units: "None"
+    logy: true
+    binning:
+      min: 0
+      max: 5
+      number_of_bins: 25
+
+  - name: "L2_dPhi_ll_NOSYS"
+    units: "rad"
+    logy: true
+    binning:
+      min: -3.2
+      max: 3.2
+      number_of_bins: 30
+
+  - name: "L2_dPhi_METj_NOSYS"
+    units: "rad"
+    logy: true
+    binning:
+      min: -3.2
+      max: 3.2
+      number_of_bins: 30
+
+  - name: "L2_ptll_NOSYS"
+    units: "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 170
+      number_of_bins: 50
+
+  - name: "L2_mll_NOSYS"
+    units: "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 250
+      number_of_bins: 60
+
+  - name: "L2_RJ_ISR_pt_NOSYS"
+    units: "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 250
+      number_of_bins: 50
+
+  - name: "L2_RJ_MTS_NOSYS"
+    units: "GeV"
+    logy: true
+    binning:
+      min: 0
+      max: 400
+      number_of_bins: 65
